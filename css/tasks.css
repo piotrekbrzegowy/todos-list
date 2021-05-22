@@ -2,6 +2,7 @@
     list-style: none;
     margin: 0;
     padding: 0;
+    word-break: break-word;
 }
 
 .tasks__item {
@@ -44,7 +45,6 @@
 .tasks__button--remove:hover {
     background-color: hsl(348, 83%, 52%);
 }
-
 
 .tasks__button--remove:active {
     background-color: hsl(348, 83%, 57%);
