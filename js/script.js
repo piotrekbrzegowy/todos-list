@@ -1,19 +1,32 @@
 {
-    const tasks = [];
+    let tasks = [];
 
     const addNewTask = (newTaskContent) => {
-        tasks.push({ content: newTaskContent });
-        render();
+        tasks = [
+            ...tasks,
+            { content: newTaskContent },
+        ];
+        renderTasks();
     };
 
     const removeTask = (taskIndex) => {
-        tasks.splice(taskIndex, 1);
-        render();
+        tasks = [
+            ...tasks.slice(0, taskIndex),
+            ...tasks.slice(taskIndex + 1),
+        ];
+        renderTasks();
     }
 
     const toggleTaskDone = (taskIndex) => {
-        tasks[taskIndex].done = !tasks[taskIndex].done;
-        render();
+        tasks = [
+            ...tasks.slice(0, taskIndex),
+            {
+                ...tasks[taskIndex],
+                done: !tasks[taskIndex].done,
+            },
+            ...tasks.slice(taskIndex + 1),
+        ];
+        renderTasks();
     }
 
     const bindRemoveEvents = () => {
@@ -36,7 +49,7 @@
         });
     }
 
-    const render = () => {
+    const renderTasks = () => {
         let htmlString = "";
 
         for (const task of tasks) {
@@ -76,7 +89,7 @@
     };
 
     const init = () => {
-        render();
+        renderTasks();
 
         const form = document.querySelector(".js-form");
         form.addEventListener("submit", onFormSubmit);
