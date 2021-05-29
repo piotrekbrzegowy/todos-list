@@ -30,7 +30,7 @@
             <h2 class="section__heading section__heading--special">Dodaj nowe zadanie</h2>
             <div class="section__body">
                 <form class="form js-form">
-                    <input class="form__input js-newTask" placeholder="Co jest do zrobienia?">
+                    <input class="form__input js-newTask" placeholder="Co jest do zrobienia?" required>
                     <button class="form__button">Dodaj zadanie</button>
                 </form>
             </div>
@@ -38,11 +38,7 @@
         <section class="section">
             <header class="section__header">
                 <h2 class="section__heading">Lista zadań</h2>
-                <div class="buttons">
-                    <button class="buttons__button">Ukryj ukończone</button>
-                    <button class="buttons__button">Ukończ wszystkie</button>
-                </div>
-
+                <div class="buttons js-buttons"></div>
             </header>
 
             <div class="section__body">
