@@ -17,6 +17,7 @@
 
 .form__button {
     padding: 10px;
+    cursor: pointer;
     background-color: hsl(180, 100%, 25%);
     color: white;
     border: none;
