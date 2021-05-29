@@ -16,6 +16,7 @@
     border: none;
     background-color: #fff;
     color: hsl(180, 100%, 25%);
+    transition: 0.5s;
 }
 
 .buttons__button:hover {
