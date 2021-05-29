@@ -11,7 +11,7 @@ Click here to see to do list: [toDoList](https://piotrekbrzegowy.github.io/toDoL
 
 This is a simple to-do list application, which will help you to organize your daily tasks.
 
-![toDoList](/img/animation.gif)
+![toDoList](/img/Animation.gif)
 
 
 ## Used technologies
