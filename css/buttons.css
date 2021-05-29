@@ -14,7 +14,7 @@
 
 .buttons__button {
     border: none;
-    background-color: #fff;
+    background-color: transparent;
     color: hsl(180, 100%, 25%);
     transition: 0.5s;
 }
@@ -25,4 +25,8 @@
 
 .buttons__button:active {
     color: hsl(180, 100%, 35%);
+}
+
+.buttons__button:disabled {
+    color: #ccc;
 }
