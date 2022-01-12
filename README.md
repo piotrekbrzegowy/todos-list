@@ -5,7 +5,7 @@ This web page was created as part of the [YouCode](https://youcode.pl/frontend-d
 
 ## Link to the web page
 
-Click here to see to do list: [toDoList](https://piotrekbrzegowy.github.io/toDoList/)
+Click here to see to do list: [toDoList](https://piotrekbrzegowy.github.io/todos-list/)
 
 ## Description
 
