@@ -1,7 +1,6 @@
 # todos-list
 
 Hi everyone!
-This web page was created as part of the [YouCode](https://youcode.pl/frontend-developer-od-podstaw/) course.
 
 ## Link to the web page
 
